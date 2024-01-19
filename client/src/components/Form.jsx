@@ -184,8 +184,8 @@ const Form = ({ usefor = "create", data = InitialFormState }) => {
 					/>
 				</div>
 				<div className={inputConClasses}>
-					<label
-						className=" font-semibold text-slate-600"
+					<label 
+						className=" after:content-['*'] after:text-red-500 font-semibold text-slate-600"
 						htmlFor="address1"
 					>
 						Address Line-1
@@ -194,13 +194,14 @@ const Form = ({ usefor = "create", data = InitialFormState }) => {
 						className=" border rounded p-2 outline-1 outline-blue-400"
 						type="text"
 						name="address1"
+						required
 						onChange={handleChange}
 						value={formData.address1}
 					/>
 				</div>
 				<div className={inputConClasses}>
 					<label
-						className=" font-semibold text-slate-600"
+						className=" after:content-['*'] after:text-red-500 font-semibold text-slate-600"
 						htmlFor="address2"
 					>
 						Address Line-2
@@ -209,13 +210,14 @@ const Form = ({ usefor = "create", data = InitialFormState }) => {
 						className=" border rounded p-2 outline-1 outline-blue-400"
 						type="text"
 						name="address2"
+						required
 						onChange={handleChange}
 						value={formData.address2}
 					/>
 				</div>
 				<div className={inputConClasses}>
 					<label
-						className=" font-semibold text-slate-600"
+						className=" after:content-['*'] after:text-red-500 font-semibold text-slate-600"
 						htmlFor="city"
 					>
 						City
@@ -224,13 +226,14 @@ const Form = ({ usefor = "create", data = InitialFormState }) => {
 						className=" border rounded p-2 outline-1 outline-blue-400"
 						type="text"
 						name="city"
+						required
 						onChange={handleChange}
 						value={formData.city}
 					/>
 				</div>
 				<div className={inputConClasses}>
 					<label
-						className=" font-semibold text-slate-600"
+						className=" after:content-['*'] after:text-red-500 font-semibold text-slate-600"
 						htmlFor="country"
 					>
 						Country
@@ -239,13 +242,14 @@ const Form = ({ usefor = "create", data = InitialFormState }) => {
 						className=" border rounded p-2 outline-1 outline-blue-400"
 						type="text"
 						name="country"
+						required
 						onChange={handleChange}
 						value={formData.country}
 					/>
 				</div>
 				<div className={inputConClasses}>
 					<label
-						className=" font-semibold text-slate-600"
+						className=" after:content-['*'] after:text-red-500 font-semibold text-slate-600"
 						htmlFor="zip"
 					>
 						Zip Code
@@ -256,6 +260,7 @@ const Form = ({ usefor = "create", data = InitialFormState }) => {
 						name="zip"
 						maxLength={6}
 						pattern="[0-9]{6}"
+						required
 						onChange={handleChange}
 						value={formData.zip}
 					/>
